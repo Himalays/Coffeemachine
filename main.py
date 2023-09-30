@@ -1,5 +1,5 @@
-from data import Resources,Menu 
-global profit
+from data import Resources,Menu,profit 
+
 flag = True
 def check_resources(order_ingredients):
     """ Returns true when order can be made, false if insufficient"""
@@ -18,6 +18,7 @@ def coins():
     return total
 
 def transaction(money_recieved, cost):
+    global profit
     if money_recieved >= cost:
         change = round(money_recieved-cost,2)
         print(f"here is the change ${change} in change")
@@ -30,10 +31,10 @@ def transaction(money_recieved, cost):
 def make_coffee(name, ingredients):
     for item in ingredients:
         Resources[item] -= ingredients[item]
-        print(f" Here is your {name}.")
+    print(f" Here is your {name}.")
 
 while flag:
-    choice = input("Choose espresso/latte/cappucinho")
+    choice = input("Choose espresso/latte/capuccinho :")
     if choice == "off":
         flag= False
     elif choice=="report":

@@ -1,23 +1,22 @@
 
-Resources = [
-    {
+Resources = {
     "water" : 300,
     "milk" : 200,
     "coffee" : 100,        
     }
-]
+
 
 profit= 0 
 
-Menu = [
-    {"espresso" : {
+Menu = {
+    "espresso" : {
         "ingredients":{
             "water":50,
             "coffee":18,
             },
         "cost" : 1.5,
         },
-        "Latte":{
+        "latte":{
             "ingredients" : {
                 "water":20,
                 "milk":150,
@@ -26,15 +25,12 @@ Menu = [
             },
         "cost":2.5,
         },
-        "capuccino":{
+        "capuccinho":{
             "ingredients": {
                 "water":20,
                 "milk":100,
                 "coffee":24,                            
             },
             "cost":3.0
-        }
-
-        
-     }
-]
+        }         
+}
